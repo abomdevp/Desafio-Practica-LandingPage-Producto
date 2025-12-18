@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>HyperX Cloud Stinger Core</title>
+
+  <!-- Bootstrap 4.6 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <!-- ALERTA DINÁMICA -->
+  <div id="alert-placeholder" class="container mt-5 pt-3"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="#">HyperX Stinger Core</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownFeatures" data-toggle="dropdown">
+              Características
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#specs">Sonido envolvente</a>
+              <a class="dropdown-item" href="#specs">Micrófono gamer</a>
+              <a class="dropdown-item" href="#specs">Comodidad ligera</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item">
+            <button class="btn btn-danger btn-sm ml-lg-2" data-toggle="modal" data-target="#reserveModal">
+              RESERVAR
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CARRUSEL -->
+  <header id="inicio" class="pt-5">
+    <div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <ol class="carousel-indicators">
+        <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#productCarousel" data-slide-to="1"></li>
+        <li data-target="#productCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/audifonos1.png" alt="HyperX Cloud Stinger Core">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="font-weight-bold">HyperX Cloud Stinger Core</h2>
+            <p>Sonido potente y comodidad total para gamers.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/audifonos2.png" alt="Audio gamer HyperX">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="font-weight-bold">Audio envolvente</h2>
+            <p>Escucha cada detalle de la partida.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/audifonos3.png" alt="Comodidad HyperX">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="font-weight-bold">Diseñados para largas sesiones</h2>
+            <p>Ligeros, resistentes y cómodos.</p>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ESPECIFICACIONES -->
+  <section id="specs" class="container my-5">
+    <div class="text-center mb-4">
+      <h2 class="font-weight-bold">Especificaciones Técnicas</h2>
+      <p class="text-muted">Diseñados para el máximo rendimiento gamer</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5>Sonido envolvente</h5>
+            <p>
+              Drivers optimizados para
+              <span data-toggle="tooltip" title="Mejora la percepción espacial en juegos FPS."
+                    class="text-danger font-weight-bold">
+                audio inmersivo
+              </span>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5>Micrófono con cancelación</h5>
+            <p>
+              Comunicación clara gracias a la
+              <span data-toggle="tooltip" title="Reduce ruidos ambientales no deseados."
+                    class="text-danger font-weight-bold">
+                cancelación de ruido
+              </span>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5>Comodidad ligera</h5>
+            <p>
+              Almohadillas suaves para
+              <span data-toggle="tooltip" title="Permite jugar por horas sin fatiga."
+                    class="text-danger font-weight-bold">
+                largas sesiones
+              </span>.
+            </p>
+
+            <button class="btn btn-outline-secondary btn-sm mt-2"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="Garantía"
+                    data-content="Garantía limitada HyperX. Compatible con PC y consolas con entrada 3.5mm.">
+              Ver condiciones
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-light py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="font-weight-bold">Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="accordion" id="faqAccordion">
+        <div class="card">
+          <div class="card-header">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#faq1">
+              ¿Son compatibles con PC y consolas?
+            </button>
+          </div>
+          <div id="faq1" class="collapse show" data-parent="#faqAccordion">
+            <div class="card-body">
+              Sí, funcionan con PC, PlayStation y Xbox mediante conector 3.5mm.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq2">
+              ¿El micrófono es desmontable?
+            </button>
+          </div>
+          <div id="faq2" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body">
+              No, es flexible y optimizado para voz clara.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq3">
+              ¿Son cómodos para sesiones largas?
+            </button>
+          </div>
+          <div id="faq3" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body">
+              Sí, su diseño liviano reduce la fatiga durante horas de juego.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="container text-center py-5">
+    <h2 class="font-weight-bold mb-3">Lleva tu experiencia gamer al siguiente nivel</h2>
+    <p class="text-muted mb-4">Reserva ahora tus HyperX Cloud Stinger Core</p>
+
+    <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#reserveModal">
+      RESERVAR AHORA
+    </button>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="reserveModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="reserveForm">
+          <div class="modal-header">
+            <h5 class="modal-title">Reserva tu producto</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <div class="modal-body">
+            <input class="form-control mb-3" type="text" placeholder="Nombre" required>
+            <input class="form-control" type="email" placeholder="Correo" required>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button id="confirmReserve" class="btn btn-primary" type="submit">Confirmar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+    });
+
+    $('#reserveForm').on('submit', function(e){
+      e.preventDefault();
+
+      $('#reserveModal').modal('hide');
+
+      $('#alert-placeholder').html(
+        '<div class="alert alert-success alert-dismissible fade show">' +
+        '<strong>¡Gracias por tu reserva!</strong> Te contactaremos pronto.' +
+        '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+        '</div>'
+      );
+
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
